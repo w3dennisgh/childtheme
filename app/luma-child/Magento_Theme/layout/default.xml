@@ -1,0 +1,31 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+  
+
+        <referenceBlock name="footer_links" remove="true"/>
+    
+        <move element="form.subscribe" destination="footer" after="-" />
+
+
+
+        <referenceContainer name="footer">
+            <block class="Magento\Cms\Block\Block" name="footer_block">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_block</argument>
+                </arguments>
+            </block>
+                   <block class="Magento\Cms\Block\Block" name="footer_en">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_en</argument>
+                </arguments>
+            </block>
+                   <block class="Magento\Cms\Block\Block" name="footer_fr">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_fr</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+
+    </body>
+</page>	
